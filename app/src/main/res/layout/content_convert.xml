@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Convert"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_convert">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textColor="#000"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textSize="36dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"></Spinner>
+    <EditText
+        android:background="@drawable/inputbackground"
+        android:layout_width="match_parent"
+        android:hint="Enter Value"
+        android:padding="8dp"
+        android:id="@+id/inputvalue"
+        android:layout_margin="50dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textSize="36dp"/>
+    <Spinner
+        android:id="@+id/spinneroutput"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <EditText
+        android:background="@drawable/inputbackground"
+        android:layout_width="match_parent"
+        android:hint="Result"
+        android:padding="8dp"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:id="@+id/outputvalue"
+        android:layout_margin="50dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
